@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canadian Indigenous Population &amp; Health Analysis</title>
+
+  <style>
+    body {
+      margin: 24px auto;
+      padding: 0 20px;
+      max-width: 1200px;
+      background: #f8fafc;
+      color: #353b10;
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #353b10;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      color: #353b10;
+      font-size: 1.7rem;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #353b10;
+      font-size: 1rem;
+    }
+
+    .viz-card {
+      margin-bottom: 28px;
+      padding: 20px;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 5%);
+    }
+
+    h2 {
+      display: inline-block;
+      margin: 0 0 16px;
+      padding-bottom: 6px;
+      border-bottom: 3px solid #3d4122;
+      color: #353b10;
+      font-size: 1.2rem;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      border: 0;
+      border-radius: 6px;
+    }
+
+    #map-frame,
+    #scatter-frame {
+      height: 650px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Canadian Indigenous Population &amp; Health Analysis</h1>
+    <p class="subtitle">Integrated Interactive Webpage</p>
+  </header>
+
+  <section class="viz-card">
+    <h2>Part 1: Geographic Distribution of Indigenous Population Composition</h2>
+    <iframe
+      id="map-frame"
+      src="map.html"
+      title="Interactive Folium Map">
+    </iframe>
+  </section>
+
+  <section class="viz-card">
+    <h2>Part 2: Community Belonging vs. Mental Health Needs</h2>
+    <iframe
+      id="scatter-frame"
+      src="scatter.html"
+      title="Animated Scatterplot">
+    </iframe>
+  </section>
+</body>
+</html>
